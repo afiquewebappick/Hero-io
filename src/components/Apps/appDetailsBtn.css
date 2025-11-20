@@ -1,0 +1,105 @@
+.glitter {
+  position: relative;
+  overflow: hidden;
+}
+
+.glitter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+/* ===== Subtle Glitter Effect ===== */
+.subtle-glitter {
+  position: relative;
+  background: linear-gradient(90deg, #00d390, #00e6a8, #00d390);
+  background-size: 200% auto;
+  color: white;
+  transition: all 0.3s ease;
+  animation: subtle-glitter-move 3s linear infinite;
+  overflow: hidden;
+}
+
+@keyframes subtle-glitter-move {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.subtle-glitter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
+
+/* ===== Flashy Glitter Effect ===== */
+.flashy-glitter {
+  position: relative;
+  background: linear-gradient(90deg, #00ffb7, #00d390, #00ffb7, #00d390);
+  background-size: 300% auto;
+  color: #fff;
+  text-shadow: 0 0 10px #00ffb7, 0 0 20px #00ffb7;
+  box-shadow: 0 0 20px #00ffb7, 0 0 40px #00ffb7;
+  animation: flashy-glitter-move 1.5s linear infinite, pulse-glow 2s ease-in-out infinite;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+@keyframes flashy-glitter-move {
+  0% {
+    background-position: 0% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px #00ffb7, 0 0 30px #00ffb7;
+  }
+  50% {
+    box-shadow: 0 0 30px #00ffb7, 0 0 60px #00ffb7;
+  }
+}

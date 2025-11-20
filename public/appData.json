@@ -1,0 +1,506 @@
+[
+  {
+    "image": "https://play-lh.googleusercontent.com/bYtqbOcTYOlgc6gqZ2rwb8lptHuwlNE75zYJu6Bn076-hTmvd96HH-6v7S0YUAAJXoJN=w240-h480",
+    "title": "WhatsApp Messenger",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 1,
+    "description": "WhatsApp is a cross-platform messaging app with end-to-end encryption by default. Users can send texts, voice notes, photos, videos, documents, locations, and make HD voice/video calls across the globe. Groups support thousands of members with admin tools, Communities bundle related groups at scale, and Channels provide one-to-many broadcasts. Desktop and web apps keep conversations synced, and multi-device lets you stay connected even when your phone is offline.",
+    "size": 100,
+    "reviews": 20000000,
+    "ratingAvg": 4.7,
+    "downloads": 5000,
+    "ratings": [
+      { "name": "1 star", "count": 500000 },
+      { "name": "2 star", "count": 200000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 3500000 },
+      { "name": "5 star", "count": 16000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png",
+    "title": "Instagram",
+    "companyName": "Meta Platforms, Inc.",
+    "id": 2,
+    "description": "Instagram is a visual platform for sharing photos, videos, Stories, and Reels. Powerful editing tools, filters, templates, and music help creators polish content quickly, while Explore and search personalize discovery. Messaging, Notes, Collabs, and Lives build community, and Shops plus product tags enable in-app browsing and purchases. Professional dashboards give creators and brands analytics and monetization options.",
+    "size": 140,
+    "reviews": 18000000,
+    "ratingAvg": 4.6,
+    "downloads": 4000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 180000 },
+      { "name": "3 star", "count": 600000 },
+      { "name": "4 star", "count": 3200000 },
+      { "name": "5 star", "count": 14000000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png",
+    "title": "YouTube",
+    "companyName": "Google LLC",
+    "id": 3,
+    "description": "YouTube is the world's largest video platform covering entertainment, education, news, and live streams. Users subscribe to channels, create playlists, and discover Shorts for bite-sized viewing. Premium offers ad-free playback and downloads, while creators use Studio analytics, monetization tools, and live chat to grow audiences. Recommendations adapt to what you watch across phones, tablets, TVs, and the web.",
+    "size": 120,
+    "reviews": 22000000,
+    "ratingAvg": 4.5,
+    "downloads": 5000,
+    "ratings": [
+      { "name": "1 star", "count": 600000 },
+      { "name": "2 star", "count": 250000 },
+      { "name": "3 star", "count": 700000 },
+      { "name": "4 star", "count": 4000000 },
+      { "name": "5 star", "count": 17000000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/KxeSAjPTKliCErbivNiXrd6cTwfbqUJcbSRPe_IBVK_YmwckfMRS1VIHz-5cgT09yMo=w240-h480",
+    "title": "Snapchat",
+    "companyName": "Snap Inc.",
+    "id": 4,
+    "description": "Snapchat centers on ephemeral messaging and creative cameras. Send Snaps that disappear, build day-long Stories, or explore Spotlight for viral short videos. Lenses and filters leverage AR for playful effects; Bitmoji avatars, Snap Map, and Memories extend social expression. Group chats, voice/video, and custom stickers make daily conversations fast and fun.",
+    "size": 110,
+    "reviews": 8000000,
+    "ratingAvg": 4.3,
+    "downloads": 2000,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 120000 },
+      { "name": "3 star", "count": 400000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 5500000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/ZU9cSsyIJZo6Oy7HTHiEPwZg0m2Crep-d5ZrfajqtsH-qgUXSqKpNA2FpPDTn-7qA5Q=w240-h480",
+    "title": "Telegram",
+    "companyName": "Telegram FZ-LLC",
+    "id": 5,
+    "description": "Telegram is a fast, cloud-based messenger with large file sharing, multi-device sync, and powerful groups and channels. Secret Chats offer end-to-end encryption and self-destruct timers, while bots and inline apps extend functionality. Massive broadcast channels, folders, and search make it ideal for communities and news at scale.",
+    "size": 90,
+    "reviews": 9000000,
+    "ratingAvg": 4.4,
+    "downloads": 1400,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 7000000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/7ynvVIRdhJNAngCg_GI7i8TtH8BqkJYmffeUHsG-mJOdzt1XLvGmbsKuc5Q1SInBjDKN=w240-h480",
+    "title": "Spotify",
+    "companyName": "Spotify AB",
+    "id": 6,
+    "description": "Spotify streams millions of songs and podcasts with personalized discovery like Discover Weekly and Daily Mix. Create collaborative playlists, follow artists, enjoy cross-device syncing, and download tracks for offline listening with Premium. The app supports lyrics, queue control, sleep timers, and seamless casting to speakers and TVs.",
+    "size": 100,
+    "reviews": 10000000,
+    "ratingAvg": 4.6,
+    "downloads": 3000,
+    "ratings": [
+      { "name": "1 star", "count": 400000 },
+      { "name": "2 star", "count": 150000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 1800000 },
+      { "name": "5 star", "count": 8000000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/TBRwjS_qfJCSj1m7zZB93FnpJM5fSpMA_wUlFDLxWAb45T9RmwBvQd5cWR5viJJOhkI=w240-h480",
+    "title": "Netflix",
+    "companyName": "Netflix, Inc.",
+    "id": 7,
+    "description": "Netflix offers an ever-growing library of series, films, anime, and documentaries with profiles, kids mode, and downloads. Personalized rows surface what to watch next, while mobile games and interactive titles expand entertainment beyond streaming. Multiple audio tracks, subtitles, and adaptive quality support global viewing.",
+    "size": 120,
+    "reviews": 7000000,
+    "ratingAvg": 4.4,
+    "downloads": 1500,
+    "ratings": [
+      { "name": "1 star", "count": 250000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 5250000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/n109V9dur2NFwV7Fbr8lwlU-isXRR0K7Q-pvp1LCyRwTVP2DfJaR-dklmXzK0MhQuz9E=w240-h480",
+    "title": "Uber",
+    "companyName": "Uber Technologies, Inc.",
+    "id": 8,
+    "description": "Uber connects riders with nearby drivers for on-demand trips, scheduled rides, and shared options where available. Fares, ETAs, and routes are transparent in-app, with safety tools like PIN verification and trip sharing. Uber also integrates delivery and mobility options in many cities.",
+    "size": 95,
+    "reviews": 5000000,
+    "ratingAvg": 4.2,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 80000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 3400000 }
+    ]
+  },
+  {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQI44E5Hyntg9dM00qZomKvouojxJA3bra82g&s",
+    "title": "Amazon Shopping",
+    "companyName": "Amazon.com, Inc.",
+    "id": 9,
+    "description": "Amazon's app lets you search and compare millions of products, read reviews, manage orders, and track deliveries with real-time updates. Prime members get fast shipping, Prime Video access, and exclusive deals. Lists, subscriptions, and secure payments streamline repeat purchases.",
+    "size": 110,
+    "reviews": 9000000,
+    "ratingAvg": 4.5,
+    "downloads": 1200,
+    "ratings": [
+      { "name": "1 star", "count": 300000 },
+      { "name": "2 star", "count": 120000 },
+      { "name": "3 star", "count": 350000 },
+      { "name": "4 star", "count": 2000000 },
+      { "name": "5 star", "count": 6550000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/Kf8WTct65hFJxBUDm5E-EpYsiDoLQiGGbnuyP6HBNax43YShXti9THPon1YKB6zPYpA=w240-h480",
+    "title": "Google Maps",
+    "companyName": "Google LLC",
+    "id": 10,
+    "description": "Google Maps provides turn-by-turn navigation, multi-stop routing, live traffic, and transit schedules in thousands of cities. Explore nearby places, read reviews, save lists, download offline areas, and share your ETA. Street View, satellite imagery, and immersive indoor maps make planning intuitive.",
+    "size": 105,
+    "reviews": 8000000,
+    "ratingAvg": 4.6,
+    "downloads": 3000,
+    "ratings": [
+      { "name": "1 star", "count": 200000 },
+      { "name": "2 star", "count": 100000 },
+      { "name": "3 star", "count": 300000 },
+      { "name": "4 star", "count": 1500000 },
+      { "name": "5 star", "count": 6200000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/KSuaRLiI_FlDP8cM4MzJ23ml3og5Hxb9AapaGTMZ2GgR103mvJ3AAnoOFz1yheeQBBI=w240-h480",
+    "title": "Gmail",
+    "companyName": "Google LLC",
+    "id": 11,
+    "description": "Gmail organizes mail with powerful search, labels, and priority inbox. Smart Compose and Smart Reply speed up writing, while dynamic email supports interactive updates from partners. Integrated Meet and Chat bring video conferencing and messaging into the inbox, with strong spam and phishing protections.",
+    "size": 90,
+    "reviews": 6000000,
+    "ratingAvg": 4.5,
+    "downloads": 2000,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 1200000 },
+      { "name": "5 star", "count": 4450000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw=w240-h480",
+    "title": "LinkedIn",
+    "companyName": "Microsoft Corporation",
+    "id": 12,
+    "description": "LinkedIn is the professional network to showcase experience, build connections, and explore jobs. Companies recruit with ads and easy apply, while creators publish long-form posts, newsletters, and videos. Learning courses and career insights help upskill and discover opportunities.",
+    "size": 100,
+    "reviews": 4000000,
+    "ratingAvg": 4.2,
+    "downloads": 800,
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 3350000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/bqliWUqt7QfpSC4EybIXMT_QZclpYN9ANItoMTXltshu8v0HTnFdfU_pboHzz7Zs7pqX1AfLE7eFVU8S0aSI",
+    "title": "PUBG Mobile",
+    "companyName": "KRAFTON, Inc.",
+    "id": 13,
+    "description": "PUBG Mobile is a tactical battle-royale where up to 100 players parachute onto sprawling maps and scavenge for weapons, armor, and vehicles. Tight gunplay, realistic ballistics, and terrain strategy reward positioning and teamwork in Solo, Duo, and Squad modes. Frequent seasons introduce new maps, modes, collaborations, and esports events, while performance presets and gyroscope controls optimize gameplay across devices.",
+    "size": 700,
+    "reviews": 55000000,
+    "ratingAvg": 4.4,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 2000000 },
+      { "name": "2 star", "count": 800000 },
+      { "name": "3 star", "count": 2500000 },
+      { "name": "4 star", "count": 10000000 },
+      { "name": "5 star", "count": 40000000 }
+    ]
+  },
+  {
+    "image": "https://m.media-amazon.com/images/I/81Z+V7GJIEL._h1_.png",
+    "title": "Clash of Clans",
+    "companyName": "Supercell",
+    "id": 14,
+    "description": "Clash of Clans is a strategic builder where you grow a village, train diverse troops, and raid for loot. Join a clan for donations and war, climb leagues, and experiment with bases through the Builder Base and Clan Capital. Seasonal challenges, hero equipment, and rotating events keep long-term progression engaging for casual and competitive players alike.",
+    "size": 250,
+    "reviews": 58000000,
+    "ratingAvg": 4.6,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 1500000 },
+      { "name": "2 star", "count": 600000 },
+      { "name": "3 star", "count": 2000000 },
+      { "name": "4 star", "count": 9000000 },
+      { "name": "5 star", "count": 45000000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/yZsmiNjmji3ZoOuLthoVvptLB9cZ0vCmitcky4OUXNcEFV3IEQkrBD2uu5kuWRF5_ERA=w240-h480",
+    "title": "Zoom",
+    "companyName": "Zoom Video Communications, Inc.",
+    "id": 15,
+    "description": "Zoom powers meetings, webinars, and chat with HD video, screen sharing, breakout rooms, AI companion features, and robust security controls. Calendars integrate for one-tap join, while virtual backgrounds and noise suppression improve remote presence. Cloud recordings and transcripts aid review and collaboration.",
+    "size": 95,
+    "reviews": 5500000,
+    "ratingAvg": 4.3,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 180000 },
+      { "name": "2 star", "count": 70000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 900000 },
+      { "name": "5 star", "count": 4150000 }
+    ]
+  },
+  {
+    "image": "https://www.goptg.com/wp-content/uploads/2025/03/Microsoft_Office-Logo.wine_.png",
+    "title": "Microsoft Office",
+    "companyName": "Microsoft Corporation",
+    "id": 16,
+    "description": "The Office app bundles Word, Excel, and PowerPoint with PDF tools, camera scanning, and templates. Cloud sync via OneDrive and SharePoint keeps files current, while comments and @mentions enable real-time teamwork. Mobile-friendly controls and quick actions make editing on the go practical.",
+    "size": 130,
+    "reviews": 3000000,
+    "ratingAvg": 4.4,
+    "downloads": 500,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 2850000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/tUZNUbnNGw8I6uLg8Zy2ZWbmSFuT5kK0dYA8tdqNmldlozNS_jSjDw5j2nElRsoTzQ=w240-h480",
+    "title": "Canva",
+    "companyName": "Canva Pty Ltd",
+    "id": 17,
+    "description": "Canva democratizes design with drag-and-drop editing, millions of assets, brand kits, and templates for social posts, presentations, videos, and print. Teams co-edit with comments and version history, while Magic tools accelerate layout, copy, and background tasks. Exports cover MP4, GIF, PDF, and more.",
+    "size": 120,
+    "reviews": 4500000,
+    "ratingAvg": 4.7,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 120000 },
+      { "name": "2 star", "count": 50000 },
+      { "name": "3 star", "count": 150000 },
+      { "name": "4 star", "count": 800000 },
+      { "name": "5 star", "count": 3300000 }
+    ]
+  },
+  {
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Dropbox_Icon.svg/2202px-Dropbox_Icon.svg.png",
+    "title": "Dropbox",
+    "companyName": "Dropbox, Inc.",
+    "id": 18,
+    "description": "Dropbox provides secure cloud storage with automatic sync, file requests, shared folders, and granular permissions. The app previews hundreds of file types, supports offline access, and tracks version history. Integrations with Office, Google Docs, and e-signature tools streamline document workflows.",
+    "size": 90,
+    "reviews": 2500000,
+    "ratingAvg": 4.3,
+    "downloads": 700,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 2100000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/mzJpTCsTW_FuR6YqOPaLHrSEVCSJuXzCljdxnCKhVZMcu6EESZBQTCHxMh8slVtnKqo=w240-h480",
+    "title": "Slack",
+    "companyName": "Slack Technologies, LLC (Salesforce)",
+    "id": 19,
+    "description": "Slack organizes work into channels for teams and projects, with threads, huddles, and clips enabling quick alignment. Powerful search, app integrations, and workflow automation reduce context switching. Enterprise features like canvas, DLP, and external connections support collaboration beyond company walls.",
+    "size": 110,
+    "reviews": 2000000,
+    "ratingAvg": 4.2,
+    "downloads": 400,
+    "ratings": [
+      { "name": "1 star", "count": 60000 },
+      { "name": "2 star", "count": 25000 },
+      { "name": "3 star", "count": 90000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1340000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/jKU64njy8urP89V1O63eJxMtvWjDGETPlHVIhDv9WZAYzsSxRWyWZkUlBJZj_HbkHA=w240-h480",
+    "title": "Microsoft Teams",
+    "companyName": "Microsoft Corporation",
+    "id": 20,
+    "description": "Teams unifies chat, meetings, calling, and files with tight Microsoft 365 integration. Channels focus conversations, while live reactions, whiteboards, and collaborative notes boost engagement. Admin controls, recordings, and transcripts support compliance and knowledge capture.",
+    "size": 120,
+    "reviews": 3500000,
+    "ratingAvg": 4.3,
+    "downloads": 600,
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 2530000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/NaFAbO7ExS4NRAvt2GYkNY6OQf9oVXwmdMTZzA6zrgjjSxhQuTCnjHyf7TgYcoSGqQ=w240-h480",
+    "title": "Reddit",
+    "companyName": "Reddit, Inc.",
+    "id": 21,
+    "description": "Reddit hosts thousands of interest-based communities where people share links, text posts, images, and video. Voting surfaces quality content, while chat, awards, and AMAs drive interaction. Users personalize feeds with subscriptions and can create communities with custom rules and tools.",
+    "size": 80,
+    "reviews": 3000000,
+    "ratingAvg": 4.1,
+    "downloads": 500,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 2140000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/6CFQQ0b9r5fzF1v6f0gIirWsOGL7sGWkJifuUQxxhbCMcBx5aSG_cNXpjDKDn5c1jwjq=w240-h480",
+    "title": "Pinterest",
+    "companyName": "Pinterest, Inc.",
+    "id": 22,
+    "description": "Pinterest is a visual discovery engine to collect ideas for cooking, fashion, travel, and home projects. Save Pins to boards, follow creators, and use visual search to find similar styles. Shopping features and trends turn inspiration into action with price, stock, and brand info.",
+    "size": 95,
+    "reviews": 2800000,
+    "ratingAvg": 4.4,
+    "downloads": 600,
+    "ratings": [
+      { "name": "1 star", "count": 90000 },
+      { "name": "2 star", "count": 35000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 2165000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/NafAciugdQk6L7_D0cmNq8cypX0pvA88h9DzlxIJQbPd3caZM3_S5-nZedHdnrcq_wCm=w240-h480",
+    "title": "CapCut",
+    "companyName": "ByteDance",
+    "id": 23,
+    "description": "CapCut is a fast video editor built for social content. Trim, split, and merge clips; add text, stickers, keyframe animations, and effects; then export up to high resolutions. Templates and beat-sync help beginners, while masking, speed ramping, chroma key, and multi-track timelines satisfy power users.",
+    "size": 110,
+    "reviews": 6000000,
+    "ratingAvg": 4.7,
+    "downloads": 1500,
+    "ratings": [
+      { "name": "1 star", "count": 150000 },
+      { "name": "2 star", "count": 60000 },
+      { "name": "3 star", "count": 200000 },
+      { "name": "4 star", "count": 1000000 },
+      { "name": "5 star", "count": 5100000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/mwTU9-4NX-_QlATb6lILSinKI47wAtOM38GjPYRPQSsQOG2hVRY4h9OfEhDxpf8ADQ=w240-h480",
+    "title": "Shazam",
+    "companyName": "Apple Inc.",
+    "id": 24,
+    "description": "Shazam identifies songs in seconds and links to full tracks on Apple Music and Spotify. See lyrics in time with the music, browse charts, and keep a history of discoveries across devices. Auto Shazam listens in the background to capture music without opening the app.",
+    "size": 25,
+    "reviews": 2000000,
+    "ratingAvg": 4.6,
+    "downloads": 1000,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 500000 },
+      { "name": "5 star", "count": 1420000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/tw_coGKgk1K_zO-Ypf9zBKV1s-KT3dYN1MIUxIqtnbfmON5x_YmuoAr31gE4oSfJHNtA-aStTd-qe9R8S6NVyA=w240-h480",
+    "title": "Duolingo",
+    "companyName": "Duolingo, Inc.",
+    "id": 25,
+    "description": "Duolingo teaches languages through short, gamified lessons that build reading, listening, speaking, and writing. Streaks, leagues, and quests keep motivation high, while placement tests and spaced repetition tailor practice. Courses cover dozens of languages with regular content updates.",
+    "size": 80,
+    "reviews": 4000000,
+    "ratingAvg": 4.7,
+    "downloads": 700,
+    "ratings": [
+      { "name": "1 star", "count": 100000 },
+      { "name": "2 star", "count": 40000 },
+      { "name": "3 star", "count": 120000 },
+      { "name": "4 star", "count": 600000 },
+      { "name": "5 star", "count": 3140000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/r7XL36PVNtnidqy6ikRiW1AHEIsjhePrZ8W5M4cNTQy5ViF3-lIDY47hpvxc84kJ7lw=w240-h480",
+    "title": "Waze",
+    "companyName": "Google LLC",
+    "id": 26,
+    "description": "Waze crowdsources real-time road data to route you around traffic, hazards, and closures. Drivers report incidents, police, and fuel prices, while the app suggests faster alternatives and shares live ETAs with friends. Voice guidance, lane suggestions, and CarPlay/Android Auto support keep navigation hands-free.",
+    "size": 60,
+    "reviews": 2000000,
+    "ratingAvg": 4.4,
+    "downloads": 500,
+    "ratings": [
+      { "name": "1 star", "count": 50000 },
+      { "name": "2 star", "count": 20000 },
+      { "name": "3 star", "count": 80000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 1500000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/yJlI8MRoj7PHDe0OAwpj6DWtZzOsgEm7oPJEIrZepJA9ZFndK5oSbyCTUDq05H7aRg=w240-h480",
+    "title": "Dropbox Paper",
+    "companyName": "Dropbox, Inc.",
+    "id": 27,
+    "description": "Dropbox Paper is a lightweight collaborative doc for notes, tasks, and project specs. Embed media, code blocks, and files; assign to-dos; and collect feedback with comments and @mentions. Everything syncs with Dropbox so teams can keep content, context, and files together.",
+    "size": 50,
+    "reviews": 300000,
+    "ratingAvg": 4.2,
+    "downloads": 200,
+    "ratings": [
+      { "name": "1 star", "count": 10000 },
+      { "name": "2 star", "count": 5000 },
+      { "name": "3 star", "count": 10000 },
+      { "name": "4 star", "count": 50000 },
+      { "name": "5 star", "count": 135000 }
+    ]
+  },
+  {
+    "image": "https://play-lh.googleusercontent.com/dVQlfnQ_Fp-wNfKv2eI9XxbLymV6oGW_0ywIw3pxhYyKhjC0Lk8y6Ru_-sUc1fq2akADzAN7QWn8nPvcw6Ck",
+    "title": "Evernote - Note Organizer",
+    "companyName": "Evernote Corporation",
+    "id": 28,
+    "description": "Evernote captures notes, web clippings, images, audio, and PDFs into searchable notebooks with tags. Powerful search (including handwriting on supported images) and document scanning keep information organized. Tasks, reminders, and multi-device sync make it a reliable personal knowledge base for work and life.",
+    "size": 85,
+    "reviews": 3000000,
+    "ratingAvg": 4.3,
+    "downloads": 500,
+    "ratings": [
+      { "name": "1 star", "count": 80000 },
+      { "name": "2 star", "count": 30000 },
+      { "name": "3 star", "count": 100000 },
+      { "name": "4 star", "count": 400000 },
+      { "name": "5 star", "count": 2400000 }
+    ]
+  }
+]
