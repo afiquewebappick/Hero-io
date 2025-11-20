@@ -1,6 +1,6 @@
-import React from "react";
-import CountUp from "react-countup";
-import { useInView } from "react-intersection-observer";
+import React from 'react';
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 const States = () => {
   const { ref, inView } = useInView({
@@ -28,7 +28,7 @@ const States = () => {
                   suffix="M"
                 />
               ) : (
-                "0M"
+                '0M'
               )}
             </h1>
             <p>21% more than last month</p>
@@ -45,7 +45,7 @@ const States = () => {
                   suffix="K"
                 />
               ) : (
-                "0K"
+                '0K'
               )}
             </h1>
             <p>46% more than last month</p>
@@ -62,7 +62,7 @@ const States = () => {
                   suffix="+"
                 />
               ) : (
-                "0"
+                '0'
               )}
             </h1>
             <p>31 more will Launch</p>

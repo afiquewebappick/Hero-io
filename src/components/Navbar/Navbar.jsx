@@ -1,26 +1,26 @@
-import React, { useEffect, useState } from "react";
-import Links from "./Links";
-import { IoIosMenu } from "react-icons/io";
-import { TbXboxXFilled } from "react-icons/tb";
-import { Link } from "react-router";
-import "./links.css";
-import logoImg from "../../assets/logo.png";
-import gitImg from "../../assets/github.png";
+import React, { useEffect, useState } from 'react';
+import Links from './Links';
+import { IoIosMenu } from 'react-icons/io';
+import { TbXboxXFilled } from 'react-icons/tb';
+import { Link } from 'react-router';
+import './links.css';
+import logoImg from '../../assets/logo.png';
+import gitImg from '../../assets/github.png';
 
 const navigationData = [
   {
-    name: "Home",
-    path: "/",
+    name: 'Home',
+    path: '/',
     id: 1,
   },
   {
-    name: "Apps",
-    path: "/apps",
+    name: 'Apps',
+    path: '/apps',
     id: 2,
   },
   {
-    name: "Installation",
-    path: "/installation",
+    name: 'Installation',
+    path: '/installation',
     id: 3,
   },
 ];
@@ -40,16 +40,18 @@ const Navbar = () => {
         setScrolled(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   return (
-    <div className={`sticky top-0 z-50 transition-all duration-0 ${
-        scrolled ? "bg-white/90 shadow-md backdrop-blur" : "bg-transparent"
-      }`}>
+    <div
+      className={`sticky top-0 z-50 transition-all duration-0 ${
+        scrolled ? 'bg-white/90 shadow-md backdrop-blur' : 'bg-transparent'
+      }`}
+    >
       <nav
         className={`flex justify-between items-center pt-7 max-w-6xl lg:mx-auto mx-5 md:py-7 ${
-          !isOpen ? "pb-7" : ""
+          !isOpen ? 'pb-7' : ''
         }`}
       >
         <div className="flex items-center gap-x-3">
@@ -79,7 +81,7 @@ const Navbar = () => {
 
         <div className="md:block hidden">
           <Link
-            to={"https://github.com/Afiqu3"}
+            to={'https://github.com/Afiqu3'}
             target="_blank"
             rel="noopener noreferrer"
             className="btn bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white rounded px-4 py-3 hover:-translate-y-0.5"
@@ -94,7 +96,7 @@ const Navbar = () => {
           <ul className={`space-y-3 animation`}>{links}</ul>
           <div>
             <Link
-              to={"https://github.com/Afiqu3"}
+              to={'https://github.com/Afiqu3'}
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-sm bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white rounded px-4 py-3 animation"
