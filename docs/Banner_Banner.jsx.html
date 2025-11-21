@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Trending.jsx/Trending.jsx - Documentation</title>
+    <title>Banner/Banner.jsx - Documentation</title>
 
     <script src="scripts/prettify/prettify.js"></script>
     <script src="scripts/prettify/lang-css.js"></script>
@@ -29,7 +29,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Trending.jsx/Trending.jsx</h1>
+    <h1 class="page-title">Banner/Banner.jsx</h1>
     
 
     
@@ -41,67 +41,79 @@
         <article>
             <pre class="prettyprint source linenums"><code>import React from 'react';
 import { Link } from 'react-router';
-import App from '../Apps/App';
+import googleStoreImg from '../../assets/googleStore.png';
+import appStoreImg from '../../assets/appStore.png';
+import heroImg from '../../assets/hero.png';
 
 /**
- * @typedef {Object} AppData
- * @property {string} id - Unique identifier of the app.
- * @property {string} title - Display name of the app.
- * @property {string} image - URL of the app thumbnail image.
- * @property {number} downloads - Number of downloads (in millions).
- * @property {number} ratingAvg - Average rating score of the app.
- */
-
-/**
- * Trending section that displays the top trending applications.
- * Shows a grid of App cards (limited to 8 items) and a button that
- * navigates to the full list of apps.
+ * Banner Component
+ *
+ * Displays the main hero section of the website, including headline text,
+ * description, download store buttons, and a hero illustration image.
  *
  * @component
- * @param {{ apps: AppData[] }} props - Component receives a list of apps.
- * @returns {JSX.Element} Rendered Trending section.
+ *
+ * @description
+ * The Banner component introduces the HERO.IO brand by showcasing a title,
+ * a short tagline, links to Google Play and App Store, and a large hero image.
+ * It serves as the top section of the homepage.
+ *
+ * @returns {JSX.Element} The rendered Banner section.
  *
  * @example
- * const apps = [
- *   { id: "1", title: "App One", image: "/a.png", downloads: 5, ratingAvg: 4.6 },
- *   { id: "2", title: "App Two", image: "/b.png", downloads: 8, ratingAvg: 4.8 }
- * ];
+ * // Usage inside a page:
+ * &lt;Banner />
  *
- * &lt;Trending apps={apps} />
+ * @notes
+ * - Uses external store links.
+ * - Contains a responsive layout with Tailwind CSS.
+ *
  */
-const Trending = ({ apps }) => {
-  return ( 
+const Banner = () => {
+  return (
     &lt;div className="bg-[#f5f5f5]">
-      &lt;div className="max-w-6xl mx-auto py-20">
-        &lt;div className="text-center sm:p-0 p-4">
-          &lt;h1 className="sm:text-5xl text-3xl font-bold mb-4">Trending Apps&lt;/h1>
-          &lt;p className="text-[#627382] sm:text-xl text-sm">
-            Explore All Trending Apps on the Market developed by us
+      &lt;div className="max-w-6xl mx-auto pt-20">
+        &lt;div className="sm:max-w-[597px] mx-auto">
+          &lt;h1 className="text-center sm:text-7xl text-3xl font-bold">
+            We Build &lt;span className="text-[#8854eb]">Productive&lt;/span> Apps
+          &lt;/h1>
+        &lt;/div>
+
+        &lt;div className="text-center mt-4">
+          &lt;p className="text-[#627382] text-sm sm:text-base">
+            At HERO.IO, we craft innovative apps designed to make everyday life
+            simpler, smarter, and more exciting. Our goal is to turn your ideas
+            into digital experiences that truly make an impact.
           &lt;/p>
         &lt;/div>
 
-        &lt;div className="mt-10 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4 p-2 lg:p-0 ">
-          {apps.slice(0, 8).map((app) => (
-            &lt;App key={app.id} app={app} />
-          ))}
+        &lt;div className="flex sm:flex-row flex-col justify-center pt-10 gap-4 sm:p-0 p-20 sm:mt-10 mt-5">
+          &lt;Link
+            to={'https://play.google.com/store/games?device=phone&amp;hl=en'}
+            className="btn drop-shadow-xl border-1 border-[#d2d2d2] rounded sm:py-3 sm:px-6 sm:text-xl text-sm font-semibold hover:-translate-y-0.5"
+          >
+            &lt;img className="w-5 h-5 sm:w-8 sm:h-8" src={googleStoreImg} alt="" />
+            Googly Play
+          &lt;/Link>
+
+          &lt;Link
+            to={'https://www.apple.com/app-store/'}
+            className="btn drop-shadow-xl border-1 border-[#d2d2d2] rounded sm:py-3 sm:px-6 sm:text-xl text-sm font-semibold hover:-translate-y-0.5"
+          >
+            &lt;img className="w-5 h-5 sm:w-8 sm:h-8" src={appStoreImg} alt="" />
+            App Store
+          &lt;/Link>
         &lt;/div>
 
-        &lt;div className="mt-10 text-center">
-          &lt;Link
-            to={'/apps'}
-            target="_parent"
-            role='link'
-            className="btn w-[145px] bg-gradient-to-r from-[#632ee3] to-[#d9ccec] text-white rounded px-4 py-3 hover:-translate-y-0.5"
-          >
-            Show All
-          &lt;/Link>
+        &lt;div className="flex justify-center lg:mt-10 mt-3">
+          &lt;img src={heroImg} alt="Hero Illustration" />
         &lt;/div>
       &lt;/div>
     &lt;/div>
   );
 };
 
-export default Trending;
+export default Banner;
 </code></pre>
         </article>
     </section>

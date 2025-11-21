@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Apps/Apps.jsx - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#App">App</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#AppDetails">AppDetails</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#Apps">Apps</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#Banner">Banner</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#Trending">Trending</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Apps/Apps.jsx</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import React, { useState } from 'react';
+import { Link } from 'react-router';
+import App from './App';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+
+/**
+ * @typedef {Object} AppData
+ * @property {string} id - Unique identifier of the app.
+ * @property {string} title - Display name of the app.
+ * @property {string} image - URL of the app thumbnail.
+ * @property {number} downloads - Number of downloads (in millions).
+ * @property {number} ratingAvg - Average rating score of the app.
+ */
+
+/**
+ * A component that displays all applications in a searchable grid.
+ * Users can filter apps by typing in the search bar. During search
+ * operations, a loading spinner is temporarily shown to simulate
+ * asynchronous behavior.
+ *
+ * @component
+ * @param {{ apps: AppData[] }} props - The list of all available apps.
+ * @returns {JSX.Element} Rendered Apps page.
+ */
+const Apps = ({ apps }) => {
+  const [totalApps, setTotalApps] = useState(apps);
+  const [loading, setLoading] = useState(false);
+
+  /**
+   * Handles filtering apps by name based on user input.
+   * Shows loading animation for 500ms to simulate data fetching.
+   *
+   * @param {React.ChangeEvent&lt;HTMLInputElement>} e - Input change event.
+   * @returns {void}
+   */
+  const handleSearch = (e) => {
+    const name = e.target.value.toLowerCase();
+    setLoading(true);
+
+    setTimeout(() => {
+      const filteredApps = apps.filter((a) =>
+        a.title.toLowerCase().includes(name),
+      );
+      setTotalApps(filteredApps);
+      setLoading(false);
+    }, 500);
+  };
+
+  return (
+    &lt;div className="bg-[#f5f5f5]">
+      &lt;div className="max-w-6xl mx-auto py-20">
+        &lt;div className="text-center sm:p-0 p-4">
+          &lt;h1 className="sm:text-5xl text-3xl font-bold mb-4">
+            Our All Applications
+          &lt;/h1>
+          &lt;p className="text-[#627382] sm:text-xl text-sm">
+            Explore All Apps on the Market developed by us. We code for Millions
+          &lt;/p>
+        &lt;/div>
+
+        &lt;div className="mt-10 flex sm:justify-between sm:flex-row flex-col justify-center items-center sm:gap-0 gap-4">
+          &lt;p className="text-2xl font-semibold text-center sm:text-left">
+            ({totalApps.length}) Apps Found
+          &lt;/p>
+
+          &lt;label className="input border-1 border-[#d2d2d2] rounded bg-[#f5f5f5]">
+            &lt;svg
+              className="h-[1em] opacity-50"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              &lt;g
+                strokeLinejoin="round"
+                strokeLinecap="round"
+                strokeWidth="2.5"
+                fill="none"
+                stroke="currentColor"
+              >
+                &lt;circle cx="11" cy="11" r="8">&lt;/circle>
+                &lt;path d="m21 21-4.3-4.3">&lt;/path>
+              &lt;/g>
+            &lt;/svg>
+
+            &lt;input
+              onChange={handleSearch}
+              type="search"
+              required
+              placeholder="Search by name"
+            />
+          &lt;/label>
+        &lt;/div>
+
+        {loading &amp;&amp; (
+          &lt;div className="flex justify-center items-center py-20">
+            &lt;LoadingSpinner />
+          &lt;/div>
+        )}
+
+        {!loading &amp;&amp; totalApps.length === 0 &amp;&amp; (
+          &lt;div className="flex flex-col justify-center items-center mt-5.5 py-40">
+            &lt;h1 className="text-4xl font-bold">No Apps Found&lt;/h1>
+            &lt;div className="mt-5 text-center">
+              &lt;Link
+                to={'/apps'}
+                target="_parent"
+                className="btn w-[145px] bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white rounded px-4 py-3 hover:-translate-y-0.5"
+              >
+                Show All Apps
+              &lt;/Link>
+            &lt;/div>
+          &lt;/div>
+        )}
+
+        &lt;div className="mt-5.5 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4 p-2 lg:p-0 ">
+          {totalApps.map((app) => (
+            &lt;App key={app.id} app={app} />
+          ))}
+        &lt;/div>
+      &lt;/div>
+    &lt;/div>
+  );
+};
+
+export default Apps;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.5</a> on Fri Nov 21 2025 16:07:18 GMT+0600 (Bangladesh Standard Time) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

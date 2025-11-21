@@ -1,46 +1,46 @@
-import React from "react";
+import React from 'react';
 import {
   FaFacebookF,
   FaGithub,
   FaInstagram,
   FaLinkedin,
   FaMapMarkerAlt,
-} from "react-icons/fa";
-import logoImg from "../../assets/logo.png";
-import { Link } from "react-router";
+} from 'react-icons/fa';
+import logoImg from '../../assets/logo.png';
+import { Link } from 'react-router';
 
 const Footer = () => {
   const bottomLinks = [
     {
       Icon: FaFacebookF,
-      label: "Facebook",
-      href: "https://www.facebook.com/afique.hossain.J/",
+      label: 'Facebook',
+      href: 'https://www.facebook.com/afique.hossain.J/',
     },
-    { Icon: FaGithub, label: "GitHub", href: "https://github.com/Afiqu3" },
-    { Icon: FaInstagram, label: "Instagram", href: "#" },
+    { Icon: FaGithub, label: 'GitHub', href: 'https://github.com/Afiqu3' },
+    { Icon: FaInstagram, label: 'Instagram', href: '#' },
     {
       Icon: FaLinkedin,
-      label: "LinkedIn",
-      href: "www.linkedin.com/in/md-afique-hossain",
+      label: 'LinkedIn',
+      href: 'www.linkedin.com/in/md-afique-hossain',
     },
   ];
   const productList = [
-    ["Apps", "#apps"],
-    ["Installation", "#installation"],
-    ["Changelog", "#changelog"],
-    ["Status", "#status"],
+    ['Apps', '#apps'],
+    ['Installation', '#installation'],
+    ['Changelog', '#changelog'],
+    ['Status', '#status'],
   ];
   const company = [
-    ["About", "#about"],
-    ["Careers", "#careers"],
-    ["Press", "#press"],
-    ["Contact", "#contact"],
+    ['About', '#about'],
+    ['Careers', '#careers'],
+    ['Press', '#press'],
+    ['Contact', '#contact'],
   ];
   const resources = [
-    ["Docs", "#docs"],
-    ["Guides", "#guides"],
-    ["Community", "#community"],
-    ["Support", "#support"],
+    ['Docs', '#docs'],
+    ['Guides', '#guides'],
+    ['Community', '#community'],
+    ['Support', '#support'],
   ];
   return (
     <footer className="bg-[#0a1a2f] text-gray-300 border-t border-white/5">
