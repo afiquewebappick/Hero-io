@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from "react";
-import { useLocation } from "react-router";
-import downloadIcon from "../../assets/icon-downloads.png";
-import ratingIcon from "../../assets/icon-ratings.png";
-import reviewsIcon from "../../assets/icon-review.png";
-import ReviewChart from "../ReviewChart/ReviewChart";
-import { addToStoreToDB, getStoreItem } from "../../utility/addToDB";
+import React, { useEffect, useState } from 'react';
+import { useLocation } from 'react-router';
+import downloadIcon from '../../assets/icon-downloads.png';
+import ratingIcon from '../../assets/icon-ratings.png';
+import reviewsIcon from '../../assets/icon-review.png';
+import ReviewChart from '../ReviewChart/ReviewChart';
+import { addToStoreToDB, getStoreItem } from '../../utility/addToDB';
 import './appDetailsBtn.css';
 
 const AppDetails = () => {
@@ -49,7 +49,7 @@ const AppDetails = () => {
             <div className="mb-[29.5px] sm:text-left text-center">
               <h3 className="text-3xl font-bold mb-2">{title}</h3>
               <p className="text-xl text-[#627382]">
-                Developed by{" "}
+                Developed by{' '}
                 <span className="text-[#986eec]">{companyName}</span>
               </p>
             </div>
@@ -77,7 +77,7 @@ const AppDetails = () => {
                 disabled={install}
                 className={`btn ${!install && 'glitter'} bg-[#00d390] text-white rounded shadow-md drop-shadow-2l disabled:!bg-[#00d390] disabled:text-white disabled:opacity-100 disabled:cursor-not-allowed disabled:drop-shadow-xl`}
               >
-                {install ? "Installed" : `Install Now (${size} MB)`}
+                {install ? 'Installed' : `Install Now (${size} MB)`}
               </button>
             </div>
           </div>

@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
-import { Link, useLoaderData } from "react-router";
-import { getStoreItem, removeFromStoreDB } from "../../utility/addToDB";
-import Select from "react-select";
-import Install from "./install";
+import React, { useEffect, useState } from 'react';
+import { Link, useLoaderData } from 'react-router';
+import { getStoreItem, removeFromStoreDB } from '../../utility/addToDB';
+import Select from 'react-select';
+import Install from './Install';
 
 const InstallList = () => {
   const [installList, setInstallList] = useState([]);
-  const [sortType, setSortType] = useState("");
+  const [sortType, setSortType] = useState('');
   const { data: apps } = useLoaderData();
   const sortTypes = [
-    { value: "highLow", label: "Hight-Low" },
-    { value: "LowHigh", label: "Low-High" },
+    { value: 'highLow', label: 'Hight-Low' },
+    { value: 'LowHigh', label: 'Low-High' },
   ];
 
   useEffect(() => {
@@ -21,16 +21,16 @@ const InstallList = () => {
 
   const handleSort = (type) => {
     setSortType(type);
-    if (type === "LowHigh") {
+    if (type === 'LowHigh') {
       const newData = [...installList].sort(
-        (a, b) => a.downloads - b.downloads
+        (a, b) => a.downloads - b.downloads,
       );
       // console.log(newData);
       setInstallList(newData);
     }
-    if (type === "highLow") {
+    if (type === 'highLow') {
       const newData = [...installList].sort(
-        (a, b) => b.downloads - a.downloads
+        (a, b) => b.downloads - a.downloads,
       );
       // console.log(newData);
       setInstallList(newData);
@@ -48,20 +48,20 @@ const InstallList = () => {
         <div className="text-center sm:p-0 p-4">
           <h1 className="sm:text-5xl text-3xl font-bold mb-4">
             {installList.length === 0
-              ? "No Install App Found"
-              : "Your Installed Apps"}
+              ? 'No Install App Found'
+              : 'Your Installed Apps'}
           </h1>
           <p className="text-[#627382] sm:text-xl text-sm">
             {installList.length === 0 ? (
               <Link
-                to={"/apps"}
+                to={'/apps'}
                 rel="noopener noreferrer"
                 className="btn mt-4 bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white rounded px-4 py-3 hover:-translate-y-0.5"
               >
                 Browse App
               </Link>
             ) : (
-              "Explore All Trending Apps on the Market developed by us"
+              'Explore All Trending Apps on the Market developed by us'
             )}
           </p>
         </div>

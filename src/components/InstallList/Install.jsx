@@ -1,6 +1,6 @@
-import React from "react";
-import downloadImg from "../../assets/download.png";
-import starImg from "../../assets/star.png";
+import React from 'react';
+import downloadImg from '../../assets/download.png';
+import starImg from '../../assets/star.png';
 
 const Install = ({ install, handleUninstall }) => {
   const { id, image, title, downloads, size, ratingAvg } = install;

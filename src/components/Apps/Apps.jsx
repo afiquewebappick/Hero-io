@@ -1,7 +1,7 @@
-import React, { useState } from "react";
-import { Link } from "react-router";
-import App from "./App";
-import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
+import React, { useState } from 'react';
+import { Link } from 'react-router';
+import App from './App';
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
 
 const Apps = ({ apps }) => {
   const [totalApps, setTotalApps] = useState(apps);
@@ -13,7 +13,7 @@ const Apps = ({ apps }) => {
     // console.log(loading)
     setTimeout(() => {
       const filteredApps = apps.filter((a) =>
-        a.title.toLowerCase().includes(name)
+        a.title.toLowerCase().includes(name),
       );
       setTotalApps(filteredApps);
       setLoading(false);
@@ -70,7 +70,7 @@ const Apps = ({ apps }) => {
             <h1 className="text-4xl font-bold">No Apps Found</h1>
             <div className="mt-5 text-center">
               <Link
-                to={"/apps"}
+                to={'/apps'}
                 target="_parent"
                 className="btn w-[145px] bg-gradient-to-r from-[#632ee3] to-[#9f62f2] text-white rounded px-4 py-3 hover:-translate-y-0.5"
               >

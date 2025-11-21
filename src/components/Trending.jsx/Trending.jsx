@@ -2,9 +2,33 @@ import React from 'react';
 import { Link } from 'react-router';
 import App from '../Apps/App';
 
-const Trending = ({ apps }) => {
-  // const name = "afique";
+/**
+ * @typedef {Object} AppData
+ * @property {string} id - Unique identifier of the app.
+ * @property {string} title - Display name of the app.
+ * @property {string} image - URL of the app thumbnail image.
+ * @property {number} downloads - Number of downloads (in millions).
+ * @property {number} ratingAvg - Average rating score of the app.
+ */
 
+/**
+ * Trending section that displays the top trending applications.
+ * Shows a grid of App cards (limited to 8 items) and a button that
+ * navigates to the full list of apps.
+ *
+ * @component
+ * @param {{ apps: AppData[] }} props - Component receives a list of apps.
+ * @returns {JSX.Element} Rendered Trending section.
+ *
+ * @example
+ * const apps = [
+ *   { id: "1", title: "App One", image: "/a.png", downloads: 5, ratingAvg: 4.6 },
+ *   { id: "2", title: "App Two", image: "/b.png", downloads: 8, ratingAvg: 4.8 }
+ * ];
+ *
+ * <Trending apps={apps} />
+ */
+const Trending = ({ apps }) => {
   return ( 
     <div className="bg-[#f5f5f5]">
       <div className="max-w-6xl mx-auto py-20">
@@ -14,11 +38,13 @@ const Trending = ({ apps }) => {
             Explore All Trending Apps on the Market developed by us
           </p>
         </div>
+
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-4 p-2 lg:p-0 ">
           {apps.slice(0, 8).map((app) => (
-            <App key={app.id} app={app}></App>
+            <App key={app.id} app={app} />
           ))}
         </div>
+
         <div className="mt-10 text-center">
           <Link
             to={'/apps'}

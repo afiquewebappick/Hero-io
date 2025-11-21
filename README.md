@@ -45,3 +45,44 @@ npm install --save-dev eslint@latest
 package.json
 
 "lint:fix": "eslint . --fix"
+
+---
+# JsDoc
+
+# from project root
+npm install --save-dev jsdoc jsdoc-cli
+# optional for nicer templates
+npm install --save-dev minami
+npm install --save-dev taffydb
+# optional plugin for markdown in descriptions
+npm install --save-dev jsdoc-export-default-interop
+
+# package.json
+"scripts": {
+  "docs:build": "jsdoc -c jsdoc.json",
+  "docs:clean": "rimraf docs"         
+}
+
+# Create jsdoc.json
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "include": ["src"],
+    "includePattern": ".+\\.(js|jsx)$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [
+    "plugins/markdown"
+  ],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false
+  },
+  "opts": {
+    "destination": "./docs",
+    "recurse": true,
+    "template": "node_modules/minami"
+  }
+}

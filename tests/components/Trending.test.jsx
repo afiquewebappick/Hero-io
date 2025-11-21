@@ -10,7 +10,7 @@ import Trending from '../../src/components/Trending.jsx/Trending';
 // }));
 const fakeApps = Array.from({ length: 10 }, (_, i) => ({
   id: i + 1,
-  name: `Test App ${i + 1}`,
+  title: `Test App ${i + 1}`,
   description: `Description for app ${i + 1}`,
 }));
 
@@ -24,49 +24,46 @@ describe('Trending Component', () => {
     render(
       <MemoryRouter>
         <Trending apps={fakeApps} />
-      </MemoryRouter>
+      </MemoryRouter>,
     );
 
     // console.log(screen.debug());
     expect(
-      screen.getByRole('heading', { name: /Trending Apps/i })
+      screen.getByRole('heading', { name: /Trending Apps/i }),
     ).toBeInTheDocument();
     // expect(screen.getByText('Trending Apps')).toBeInTheDocument();
     expect(
       screen.getByText(
-        'Explore All Trending Apps on the Market developed by us'
-      )
+        'Explore All Trending Apps on the Market developed by us',
+      ),
     ).toBeInTheDocument();
   });
 
-  //   it('should render only the first 8 apps', () => {
-  //     render(
-  //       <MemoryRouter>
-  //         <Trending apps={fakeApps} />
-  //       </MemoryRouter>
-  //     );
+  it('should render only the first 8 apps', () => {
+    render(
+      <MemoryRouter>
+        <Trending apps={fakeApps} />
+      </MemoryRouter>,
+    );
 
-  //     const items = screen.getAllByTestId('app-item');
-  //     expect(items).toHaveLength(8);
+    for (let i = 1; i <= 8; i += 1) {
+      const matches = screen.getAllByText(`Test App ${i}`);
+      expect(matches.length).toBeGreaterThan(0);
+    }
+  });
 
-  //     // Optional: ensure they are the first 8
-  //     expect(items[0]).toHaveTextContent('App 0');
-  //     expect(items[7]).toHaveTextContent('App 7');
-  //   });
+  it('should render the Show All link with correct href', () => {
+    render(
+      <MemoryRouter>
+        <Trending apps={fakeApps} />
+      </MemoryRouter>,
+    );
+    // screen.debug();
 
-//   it('should render the Show All link with correct href', () => {
-//     render(
-//       <MemoryRouter>
-//         <Trending apps={fakeApps} />
-//       </MemoryRouter>
-//     );
-//     // screen.debug();
-
-//     // console.log(screen.debug());
-//     // const link = screen.getAllByRole('link', { name: /Show All/i });
-//     expect(
-//       screen.getByRole('link', { name: /Show All/i })
-//     ).toBeInTheDocument();
-//     // expect(link).toHaveAttribute('href', '/apps');
-//   });
+    // console.log(screen.debug());
+    const links = screen.getAllByRole('link', { name: /Show All/i });
+    expect(links.length).toBeGreaterThan(0);
+    // Ensure at least one of the rendered links points to /apps
+    expect(links.some((l) => l.getAttribute('href') === '/apps')).toBe(true);
+  });
 });

@@ -1,5 +1,5 @@
-import React from "react";
-import { RingLoader } from "react-spinners";
+import React from 'react';
+import { RingLoader } from 'react-spinners';
 
 const LoadingSpinner = () => {
   return (
